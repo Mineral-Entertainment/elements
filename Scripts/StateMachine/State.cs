@@ -12,7 +12,7 @@ namespace Mineral
 		public string Name => name;
 
 		[SerializeField] private bool startingState;
-		[SerializeField] private string name;
+		[SerializeField, ConstTagDropdown(typeof(StateTags))] private string name;
 
 		public void OnStateEnter()
 		{

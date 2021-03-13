@@ -7,8 +7,9 @@ using UnityEngine;
 
 namespace Mineral
 {
+	[CreateAssetMenu(fileName = "StateMachine", menuName = "State Machine/State Machine", order = 1)]
 	[Serializable]
-	public class StateMachine
+	public class StateMachine : ScriptableObject
 	{
 		[SerializeField] private List<State> states;
 
